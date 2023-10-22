@@ -12,4 +12,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Add Plugins in {}
-require("lazy").setup("0x5252.plugins")
+require("lazy").setup({ { import = "0x5252.plugins"}, {import = "0x5252.plugins.lsp" } })

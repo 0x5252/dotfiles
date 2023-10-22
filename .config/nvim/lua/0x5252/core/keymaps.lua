@@ -21,4 +21,4 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open currrent buffe
 keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move to split left" })
 keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move to split below" })
 keymap.set("n", "<leader>k", "<C-w>k", { desc = "Move to split above" })
-keymap.set("n", "<leader>l", "<C-w>l", { desc = "Move to split right" })
+keymap.set("n", "<leader>l", "<C-w>l", { desc = "Move to split right", remap = true })
