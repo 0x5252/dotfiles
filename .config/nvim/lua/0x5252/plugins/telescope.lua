@@ -4,7 +4,7 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    -- { 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
+    "ElPiloto/telescope-vimwiki.nvim",
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
@@ -25,6 +25,7 @@ return {
     })
 
     telescope.load_extension("fzf")
+    telescope.load_extension("vimwiki")
 
     -- set keymaps
     local keymap = vim.keymap

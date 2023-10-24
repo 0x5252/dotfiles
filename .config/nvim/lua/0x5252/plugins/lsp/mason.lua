@@ -21,10 +21,10 @@ return {
       ensure_installed = {
         "html",
         "lua_ls",
-        "pyright"
+        "pyright",
+        "texlab"
       },
       automatic_installation = true,
     })
   end,
-   
 }

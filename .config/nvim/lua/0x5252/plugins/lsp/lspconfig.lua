@@ -43,7 +43,7 @@ return {
       keymap.set("n", "<leader>D", vim.diagnostic.open_float, opts)
 
       opts.desc = "Go to previous diagnostic"
-      keymap.set("n", "[d]", vim.diagnostic.goto_prev, opts)
+      keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
 
       opts.desc = "Go to next diagnostic"
       keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
@@ -65,6 +65,11 @@ return {
     end
 
     lspconfig["html"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    lspconfig["texlab"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
