@@ -17,7 +17,7 @@ return {
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous, -- move to previous result
-            ["<C-j>"] = actions.move_selection_next, -- move to next result
+            ["<C-j>"] = actions.move_selection_next,     -- move to next result
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist
           },
         },
@@ -33,5 +33,8 @@ return {
     keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
     keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+    keymap.set("n", "<leader>cs", function()
+      require('telescope.builtin').live_grep({ cwd = '~/vimwiki_personal/vimcheatsheets/' })
+    end, { desc = "Open grep search for personal cheatsheets" })
   end,
 }

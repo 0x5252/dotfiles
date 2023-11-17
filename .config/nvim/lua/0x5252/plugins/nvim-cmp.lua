@@ -2,12 +2,13 @@ return {
   "hrsh7th/nvim-cmp",
   event = "InsertEnter",
   dependencies = {
-    "hrsh7th/cmp-buffer",           -- text in buffer
-    "hrsh7th/cmp-path",             --file system paths
-    "L3MON4D3/LuaSnip",             -- snippet engine
-    "saadparwaiz1/cmp_luasnip",     -- for autocompletion
-    "rafamadriz/friendly-snippets", -- useful snippets
-    "onsails/lspkind.nvim",         -- vs-code like pictograms
+    "hrsh7th/cmp-buffer",                  -- text in buffer
+    "hrsh7th/cmp-path",                    --file system paths
+    "L3MON4D3/LuaSnip",                    -- snippet engine
+    "saadparwaiz1/cmp_luasnip",            -- for autocompletion
+    "rafamadriz/friendly-snippets",        -- useful snippets
+    "onsails/lspkind.nvim",                -- vs-code like pictograms
+    "hrsh7th/cmp-nvim-lsp-signature-help", -- show parameters while typing
   },
   config = function()
     local cmp = require("cmp")
@@ -70,10 +71,11 @@ return {
       },
       -- autocomplete sources
       sources = cmp.config.sources({
-        { name = "nvim_lsp" }, -- nvim lsp server
-        { name = "luasnip" },  -- snippets
-        { name = "buffer" },   --  text in current buffer
-        { name = "path" },     -- file system paths
+        { name = "nvim_lsp" },                -- nvim lsp server
+        { name = "luasnip" },                 -- snippets
+        { name = "buffer" },                  --  text in current buffer
+        { name = "path" },                    -- file system paths
+        { name = "nvim_lsp_signature_help" }, -- while typing
       }),
       -- configuration for lspkind for vs-code like pictograms in completion menu
       formatting = {
