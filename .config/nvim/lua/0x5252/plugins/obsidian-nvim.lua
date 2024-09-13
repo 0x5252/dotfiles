@@ -1,0 +1,25 @@
+return {
+	-- "epwalsh/obsidian.nvim",
+	-- version = "*",
+	-- lazy = true,
+	-- ft = "markdown",
+	-- dependencies = {
+	-- 	"nvim-lua/plenary.nvim",
+	-- },
+	-- opts = {
+	-- 	workspaces = {
+	-- 		{
+	-- 			name = "private",
+	-- 			path = "~/vaults/private",
+	-- 		},
+	-- 		{
+	-- 			name = "work",
+	-- 			path = "~/vaults/work",
+	-- 		},
+	-- 		{
+	-- 			name = "bachelor",
+	-- 			path = "~/vaults/bachelor",
+	-- 		},
+	-- 	},
+	-- },
+}
