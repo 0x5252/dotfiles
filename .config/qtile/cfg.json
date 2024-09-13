@@ -1,0 +1,11 @@
+{
+  "bar": "shapes",
+  "bar2": "",
+  "browser": "",
+  "term": "kitty",
+  "term2": "",
+  "wallpaper_1920": "~/.config/qtile/pictures/normal_wp_1.jpg",
+  "wallpaper_3440": "~/.config/qtile/pictures/wide_wp_5.png",
+  "wallpaper_3440_work": "~/.config/qtile/pictures/wide_wp_2.jpg",
+  "wallpaper_5120": "~/.config/qtile/pictures/ultrawide_wp_3.jpg"
+}
